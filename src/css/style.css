@@ -30,8 +30,7 @@ nav {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 
-  /* Menambahkan z-index agar navbar selalu di lapisan paling atas */
-  z-index: 1000;
+  
 }
 
 ul {
@@ -80,6 +79,22 @@ li a:hover {
 
 .nav-mobile {
   display: none; /* Sembunyikan mobile di desktop */
+}
+
+.subtitle {
+  font-family:"Open Sans", sans-serif; 
+  text-align: center;
+  max-width: 600px;
+  margin: 8px auto 24px;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+section {
+  padding: 40px 0;
+  width: 90%;
+  margin: auto;
 }
 
 /* hero */
@@ -198,22 +213,16 @@ li a:hover {
   margin-bottom: 40px;
 }
 
-.card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: auto;
-  justify-content: space-around;
-}
 
-.card-content {
+
+.icon-img {
   display: flex;
   padding: 10px;
   justify-content: center;
   gap: 30px;
 }
 
-.card-content img{
+.icon-img img{
   width: 60px;
 }
 
@@ -223,6 +232,85 @@ li a:hover {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
+
+
+
+.porto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.card {
+  max-width: 500px;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  justify-content: space-around;
+}
+
+.card-img img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;;
+}
+
+.card-content  > h3 {
+  font-size: 18pt;
+  font-weight: 600;
+}
+
+.card-content > p {
+  font-size: 12pt;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #553;
+}
+
+#why-hire-me > div > h1 {
+  text-align: center;
+  color: rgb(250, 173, 26);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.why-wrapper {
+  width: 70%;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.why-item {
+  padding: 20px 25px;
+  border-left: 3px solid rgb(250, 173, 26);
+}
+
+.why-item h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14pt;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.why-item p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #555;
+}
+
+
 
 /* Reponsive mobile */
 @media (max-width: 768px) {
@@ -393,6 +481,14 @@ li a:hover {
  font-size: 18pt;
 }
 
+#portofolio > div > h1{
+ font-size: 18pt;
+}
+
+#why-hire-me > div > h1{
+ font-size: 18pt;
+}
+
 .paragaf {
   width: 90%;
   padding-left: 10px;
@@ -403,7 +499,45 @@ li a:hover {
   font-size: 14pt;
 }
 
-.card-content  img {
+
+.icon-img {
+  gap: 20px;
+}
+.icon-img img{
   width: 40px;
 }
+
+section {
+  padding: 15px 0;
+  width: 100%;
+  margin: auto;
+}
+
+.porto {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  width: 85%;
+  margin: auto;
+}
+
+.subtitle {
+  max-width: 75%;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.why-wrapper {
+  grid-template-columns: 1fr;
+  width: 90%;
+
+}
+
+.why-item p {
+  text-align: justify;
+}
+
 }
